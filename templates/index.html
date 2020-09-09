@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="CSS/style.css" />
-  <link rel="stylesheet" href="CSS/bootstrap.min.css" />
-  <link rel="stylesheet" href="CSS/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/CSS/style.css" />
+  <link rel="stylesheet" href="../static/CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/CSS/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>COVID-19</title>
+  <title>COVID ASS</title>
 </head>
 
 <body>
+
+<section>
   <div class="container-1">
     <nav class="nav">
-      <img src="img\coronavirus-blue.png" class="headimg" alt="">
+      <img src="../static/img/coronavirus-blue.png" class="headimg" alt="">
       <p class="phead">COVID-19</p>
       <div class="navbar">
         <a href="#">HOME</a>
@@ -42,31 +44,50 @@
         </div>
       </div>
       <div class="jumbo">
-        <img src="img\covidJumbo.png" alt="c-19" />
+        <img src="../static/img/covidJumbo.png" alt="c-19" />
       </div>
-
+    </div>
+    <div class="status">
+   
+      <div class="glopic">
+        <div class="redimg">
+          <img src="../static/img/icons8-globe-100.png" class="icon1" alt="">
+          <p class="overview">Stats Overview</p>
+          <h3 class="glob">Global</h3>
+          <select name="west_africa" id="global_tins">
+            {% for country in countries %}
+              <option value="{{country}}">{{country}}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="glopic">
+        <div class="redimg">
+          <img src="../static/img/coronavirus-pink.png" class="icon2" alt="">
+          <p class="overview">Total Coronacases</p>
+          
+          <p class="glob">1,245,347</p>
+        </div>
+      </div>
+      <div class="glopic">
+        <div class="redimg">
+          <img src="../static/img/coronavirus-green.png" class="icon2" alt="">
+          <p class="overview">Total Recovered</p>
+          <p class="glob">259,544</p>
+        </div>
+      </div>
+      <div class="glopic">
+        <div class="redimg">
+          <img src="../static/img/coronavirus-blue.png"  class="icon2" alt="">
+          <p class="overview">Total Deaths</p>
+          <p class="glob">68,184</p>
+        </div>
+      </div>
+      
     </div>
   </div>
   <!-- end of container-1 -->
-  <div class="status">
-    <div class="globe">
-      <img src="img/icons8-globe-100.png" alt="" class="icon1">
-      <p id="stats">Stats Overview</p>
-      <p id="stat1">Global ></p>
-    </div>
-    <div class="redvirus">
-      <img src="img/coronavirus-pink.png" alt="" class="icon2">
-      <!-- <p id="stats"> Total Coronavirus Cases</p> -->
-    </div>
-    <div class="greenvs">
-      <img src="img/coronavirus-green.png" alt="" class="icon3">
-      <!-- <p>Total Recovered</p> -->
-    </div>
-    <div class="lastvs">
-      <img src="img/coronavirus-blue.png" alt="" class="icon4">
-      <p>Total Deaths</p>
-    </div>
-  </div>
+  
   <!-- end of status -->
   <div class="container-2">
 
@@ -939,205 +960,52 @@
       </div>
 
       <div class="US">
-        <img src="img/united-states-of-america-flag-round-icon-64.png" class="countimg" alt="">
+        <img src="../static/img/united-states-of-america-flag-round-icon-64.png" class="countimg" alt="">
         <p>United States <span style="float: right;">20,000</span> </p>
       </div>
       <div class="spain">
-        <img src="img/spain-flag-round-icon-64.png" alt="" class="countimg">
+        <img src="../static/img/spain-flag-round-icon-64.png" alt="" class="countimg">
         <p>Spain <span style="float: right;"> 130,759</span></p>
       </div>
       <div class="ghana">
-        <img src="img/ghana-flag-round-icon-64.png" alt="" class="countimg">
+        <img src="../static/img/ghana-flag-round-icon-64.png" alt="" class="countimg">
         <p>Ghana <span style="float: right;">42,653</span></p>
       </div>
       <div class="italy">
-        <img src="img/italy-flag-round-icon-64.png" alt="" class="countimg">
+        <img src="../static/img/italy-flag-round-icon-64.png" alt="" class="countimg">
         <p>Italy <span style="float: right;">128,948</span></p>
       </div>
       <div class="china">
-        <img src="img/china-flag-round-icon-64.png" alt="" class="countimg">
+        <img src="../static/img/china-flag-round-icon-64.png" alt="" class="countimg">
         <p>China(mailand) <span style="float: right;">81,669</span></p>
       </div>
       <div class="france">
-        <img src="img/france-flag-round-icon-64.png" alt="" class="countimg">
+        <img src="../static/img/france-flag-round-icon-64.png" alt="" class="countimg">
         <p>France <span style="float: right;">68,605</span></p>
       </div>
       <div class="iran">
-        <img src="img/iran-flag-round-icon-64.png" alt="" class="countimg">
+        <img src="../static/img/iran-flag-round-icon-64.png" alt="" class="countimg">
         <p>Iran <span style="float: right;">58,226</span></p>
       </div>
       <div class="uk">
-        <img src="img/united-kingdom-flag-round-icon-64.png" alt="" class="countimg">
+        <img src="../static/img/united-kingdom-flag-round-icon-64.png" alt="" class="countimg">
         <p>United Kingdom <span style="float: right;">47,806</span></p>
       </div>
 
 
     </div>
+
+</section>
+
+  
     <!-- end of location -->
-    <h3 class="corohead">HOW CORONAVIRUS SPREAD</h3>
-    <div class="box1">
-      <img src="img/handshake.png" alt="" class="img4">
-      <h5>Person-to-person spread</h5>
-      <p class="temp">The coronavirus is thought to spread mainly from person to person.
-        This can happen between people who are in close contact with one another.
-      </p>
-    </div>
-    <div class="box2">
-      <img src="img/stayhome.png" alt="" class="img4">
-      <h5>Sore Throat</h5>
-      <p class="temp">It is painful with persons with sore throat to eat or even talk.This brings a lot
-        of uncomfortability with such persons and swallowing becomes difficult most of the time.
-      </p>
-    </div>
-    <div class="box3">
-      <img src="img/sneeze.png" alt="" class="img4">
-      <h5>Person sneezes</h5>
-      <p class="temp">Sneezing is another fast spread of the virus, water droplets from an infected person
-        to a closer one can cause the spread.
-      </p>
-    </div>
-    <h3 class="symphead">SYMPTOMS OF CORONAVIRUS</h3>
+    
 
-    <div class="box4">
-      <img src="img/fever.png" alt="" class="img4">
-      <h5>Fever</h5>
-      <p class="temp">High Fever-this happens if you feel hot when you touch your chest or back(you do not need to
-        measure
-        your temperature necessarily).Its is a common sign and also may appear in 2-10 days if you are affected.
-      </p>
-    </div>
-    <div class="box5">
-      <img src="img/cough.png" alt="" class="img4">
-      <h5>Dry Cough</h5>
-      <p class="temp">Continous cough-this means coughing a lot for more than an hour,or 3 or more
-        coughing episodes in 24hours(if you usually have a cough ,it may be worse than usual).
-      </p>
-    </div>
-    <div class="box6">
-      <img src="img\cover-your-cough.png" alt="" class="img4">
-      <h5>Sore Throat</h5>
-      <p class="temp">A sore-throat can make it painful to eat or even talk.It brings scratchiness and irritation
-        to the throat that can become worse when swallowing.
-      </p>
-    </div>
-
-    <h3 class="virus">SYMPTOMS OF CORONAVIRUS</h3>
-    <div class="wrapper">
-      <div class="wash">
-        <img src="img\handwash.png" class="hwash" alt="">
-        <h3>Wash your hands regularly.</h3>
-        <p>Handwashing is one of the best ways to protect yourself and your family from getting sick.Learn when and when
-          how you should wash your hands to stay healthy.</p>
-      </div>
-      <div class="wash">
-        <img src="img\fever.png" class="fever" alt="">
-        <h3>Stay home if you feel unwell</h3>
-        <p>Most people with COVID-19 have mild illness and are able to recover at home without medical care.Do not leave
-          your home except to get medical care.</p>
-      </div>
-      <div class="wash">
-        <img src="img\touch.png" class="touch" alt="">
-        <h3>Avoid touching your face.</h3>
-        <p>To help prevent infections,keep your hands away from your eyes,nose and mouth.Why? Touching the mucous
-          membranes on your face.</p>
-      </div>
-      <div class="wash">
-        <img src="img\cover-your-cough.png" class="mouth" alt="">
-        <h3>Cover your mouth and nose.</h3>
-        <p>Cover your mouth and nose with a tissue when you cough or sneeze.Put your used tissue in a waste basket.If
-          you don't have a tissue cough or sneeze into your elbow.</p>
-      </div>
-    </div>
-  </div>
-  <!-- end of container 2 -->
-  <div class="container-3">
-    <h2>FAQ</h2>
-    <div class="com">
-      <div class="cov19">
-        <p>COVID-19</p>
-      </div>
-      <div class="cov19" id="how">
-        <p>How it spreads</p>
-      </div>
-      <div class="cov19">
-        <p>How to protect yourself</p>
-      </div>
-      <div class="cov19">
-        <p>Symptoms & Testing</p>
-      </div>
-      <div class="cov19">
-        <p>Community</p>
-      </div>
-    </div>
-    <div class="novel">
-      <li>What is a novel coronavirus?<i class="fa fa-minus-circle fa-x"></i> </li>
-      <li>On February 11,2020 the World Health Organization announced an official name for the disease that is causing
-        the novel coronavirus outbreak.</li>
-      <li>What kind of wax do you use & how long does it last? <i class="fa fa-plus-circle fa-x"></i></li>
-      <li>What kind of resources do you need from me? <i class="fa fa-plus-circle fa-x"></i></li>
-      <li>Does applying wax remove scratches & swirl marks? <i class="fa fa-plus-circle fa-x"></i></li>
-    </div>
-
-
-  </div>
-  <!-- end of container-3 -->
-  <div class="container4">
-    <h3 style="text-align: center;color: #0d1157;padding-top: 5%;">Blog Topics</h3>
-    <div class="myblog">
-      <div class="row">
-        <div class="col-4">
-          <div>
-            <div class="card shadow">
-              <div class="imgspace"></div>
-              <div class="card-body">
-                <h6 class="card-title">Wearing face masks when working.</h6>
-                <p class="card-text">If you wear a face mask,then you must know how to use it and dispose off properly.
-                </p>
-                <p class="date">15 May 2020 </p>
-                <a href="#" class="primary" id="read">read more..</a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div>
-            <div class="card shadow">
-              <div class="imgspace"></div>
-              <div class="card-body">
-                <h6 class="card-title">Cleaning hands with sanitizer</h6>
-                <p class="card-text">Washing your hands can protect you.Also,alcohol-based sanitizer kills the virus..
-                </p>
-                <p class="date">21 Oct 2020</p>
-                <a href="#" class="primary" id="read">read more..</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card shadow">
-            <div class="imgspace"></div>
-            <div class="card-body">
-              <h6 class="card-title">Stay home</h6>
-              <p class="card-text">Stay home,save lives.As COVID-19 continues to impact communities around the globe...
-              </p>
-              <p class="date">10 Mar 2020</p>
-              <a href="#" class="primary" id="read">read more..</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <input type="button" value="view all >" class="view">
-  </div>
-  </div>
   <!-- end of container4 -->
   <div class="lastbox">
     <div class="wrap">
       <div class="cov">
-        <img src="img/coronavirus-blue.png" class="footimg" alt=""><p id="ftext">COVID-19</p>
+        <img src="../static/img/coronavirus-blue.png" class="footimg" alt=""><p id="ftext">COVID-19</p>
         <p> Mariedezigns is an online marketplace built to cope with a promising future.</p>
       </div>
       <div class="links">
@@ -1165,9 +1033,9 @@
       <div class="keep">
         <p> KEEP IN TOUCH</p>
         <div class="icons">
-          <i class="fa fa-facebook fa-2x"></i>
-          <i class="fa fa-youtube-play fa-2x"></i>
-          <i class="fa fa-instagram fa-2x"></i>
+          <i class="fa fa-facebook fa-2x" id="fbook"></i>
+          <i class="fa fa-youtube-play fa-2x" id="ytube"></i>
+          <i class="fa fa-instagram fa-2x" id="insta"></i>
         </div>
       </div>
     </div>

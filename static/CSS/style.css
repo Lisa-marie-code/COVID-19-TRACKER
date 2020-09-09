@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .container-1{
 background-color: #262C7C;
 height: 700px;
@@ -63,6 +68,7 @@ height: 700px;
     margin-top: 10%;margin-left:.2%;
 }
 .status{
+    display: flexbox;
     height: 157px;
     width: 80%;
     position: absolute;
@@ -73,43 +79,45 @@ height: 700px;
     z-index: 2;
     transform: translate(-50%, 0%);  
 }
-.globe{
-    display: inline-flex;
-    align-items: flex-end;
-    margin-top: 3%;
+.redimg select{
+        width: 50%;
+        border: none;
+        background-color: white;
+    }
+
+.glopic{
+    display: flexbox;
+    float: left;
+    width: 20%;
+    height:50% ;
+    margin-left: 4%;margin-top: 4%;
+
 }
 .icon1{
-    width:30%;
+    width:25%;
+    margin-top:5%;
+}
+.overview{
+    display: inline-flex;
+    color: #0d1157;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.glob{
+    color: #0d1157;
+    margin-left: 26%;
+    margin-top: -10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .icon2{
-    width:8%;
-    margin-left: 30%;
-    position: absolute;
-    top:15%;
+    width: 26%;
+    margin-top: 5%;
 }
-.icon3{
-    width:8%; 
-    margin-left: 50%;
-    position: absolute;
-    top:15%;
-}
-.icon4{
-    width:8%; 
-    margin-left: 70%;
-    position: absolute;
-    top:15%; 
-}
-#stats{
-    display: inline-block;
-    color: #0d1157;
-}
-#stat1{
-    color:#0d1157;
-}
+
 
 .container-2{
     background-color:#ececec;
-    height: 2400px;
+    height: 1000px;
 }
 .map{
     margin-top:10% ;
@@ -236,44 +244,7 @@ right: 10%;background-color: white;
 }
 
 
-.box1{
-    width: 24%;height:50%;
-    border-radius: 2%;
-    position: absolute;
-    border: 2px solid white;
-    margin-top:64% ;
-    margin-left: 10%;
-    box-shadow:0 1px 1px 0 #E4E5F7, 0 1px 1px 0 #E4E5F7;
-    background-color: white;
-}
-.box2{
-    width: 24%;height:50%;
-    border: 2px solid white;
-    position: absolute;
-    border-radius: 2%;
-    margin-top:64% ;
-    margin-left:25%;
-    right:10%;
-    box-shadow:0 1px 1px 0 #E4E5F7, 0 1px 1px 0 #E4E5F7;
-    background-color: white;
-}
-.box3{
-    width:24%;
-    position: absolute;
-    margin-right:32%;
-    border: 2px solid white;border-radius: 2%;
-    margin-top:64% ;
-    right:6%;
-    height: 50%;
-    box-shadow:0 1px 1px 0 #E4E5F7, 0 1px 1px 0 #E4E5F7;
-    background-color: white;
-}
-.corohead{
-    position: absolute;
-    margin-top: 57%;
-    margin-left:33%;
-    color: #262C7C;
-}
+
 .symphead{
     position: absolute;
     margin-top: 93%;
@@ -290,163 +261,7 @@ right: 10%;background-color: white;
     height: 50%;
     box-shadow:0 1px 1px 0 #E4E5F7, 0 1px 1px 0 #E4E5F7;
     background-color: white;
-}
-.img4{
-width:35% ; border:1px solid #E4E5F7; border-radius:70%;margin-left: 30%;
-margin-top:5%;
-background-color: #E4E5F7;
-}
-div > h5{
-margin-left:37%; margin-top: 5%; color: #0d1157; 
-}
-.temp{
-    color: #0d1157;
-    padding-left:10px ;padding-right:10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.box5{
-    width:24%;
-    position: absolute;
-    margin-right:33%;
-    border: 2px solid white; border-radius: 2%;
-    margin-top:100% ;
-    right:5%;
-    height: 50%; box-shadow:0 1px 1px 0 #E4E5F7, 0 1px 1px 0 #E4E5F7;
-    background-color: white;
-}
-.box6{
-    width:24%;
-    position: absolute;
-    margin-right:32%;
-    border: 2px solid white; border-radius: 2%;
-    margin-top:100% ;
-    box-shadow:0 1px 1px 0 #E4E5F7, 0 1px 1px 0 #E4E5F7;
-    left: 66%; height: 50%;
-    background-color: white;
-}
-.virus{
-position: absolute;
-margin-top: 135%;
-color: #262C7C;
-margin-left: 35%;
-}
-
-.wrapper{
-    display:grid ;
-    grid-template-columns: 24% 24% 24% 24%;
-    position: absolute;
-    margin-top: 140%;
-    margin-left: 8%;
-
-}
-.wrapper > div{
-    padding: 2rem;
-}
-.wash > h3{
-    color: #262C7C;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger; 
-}
-.wash > p{
-    color: #262C7C;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-}
-.hwash{
-    width:50%;
-    border: 1px solid white;
-    border-radius: 60%;
-    background-color:#E4E5F7;
-     /* right: 20%; */
-}
-.fever{
-    width:50%;
-    border: 1px solid white;
-    border-radius: 60%;
-    background-color:#E4E5F7;
-}
-.touch{
-    width:50%;
-    border: 1px solid white;
-    border-radius: 60%;
-    background-color:#E4E5F7;
-}
-.mouth{
-    width: 50%; border: 1px solid white;
-    border-radius: 60%;
-    background-color:#E4E5F7;
-
-}
-.container-3{
-height: 543px;
-background-color:white;
-}
-#how{
-    border: 1px solid #262C7C ;
-}
-.container-3 > h2{
-    position: absolute;
-    margin-left: 48%;
-   margin-top: 1%;
-   color: #0d1157;
-}
-.com{
-    height:400px ;
-    width:20%;
-    margin-top:5%;margin-left:10%;
-    position: absolute;  
-}
-.novel{
-    height: 380px;
-    width:60%;
-    margin-left: 35%; margin-top:6%;
-    position: absolute;
-}
-li > i{
-    float: right;
-}
-li{
-    list-style: none;
-    border-bottom:1px solid #E7E8F0 ;margin-left:2% ;
-    padding-top: 3%;padding-bottom: 2%;color: #0d1157;
-}
-
-.cov19{
-    position: relative;
-    height: 60px; width:100%; border: 1px solid #E7E8F0; border-radius:5px;
-}
-.cov19 > p{
-    color: #0d1157;text-align:left; margin-left:4% ;
-}
-.com > div{
-    margin-top:5%;margin-bottom: 5%;padding-top: 4%;
-}
-
-.container4{
-    background-color:#ececec;
-    height: 700px;
-}
-.myblog{
-    padding-top: 5%;
-    width:90%;
-    margin-left: 5%; margin-right: 5%;
-    border-radius:5px ;
-}
-.view{
-    background-color: #EB0065;color:white;
-    margin-left: 45%; 
-    margin-top:3%;
-    width: 10%;
-    padding:6px;
-    border:1px solid #EB0065;
-    border-radius:5px;
 } 
-
-.imgspace{
-    height: 200px;
-    background-color: #C6C6C6;
-    border-radius: 5px;
-}
 
 .lastbox{
     height: 381px;
@@ -500,6 +315,22 @@ display: inline;
 #read{
     float: right;
 }
-.fa {
-    margin-left:20% ;
+.icons {
+    margin-left:40% ;
+    color: #EB0065;
+}
+#fbook{
+    border:1px solid white;
+    padding: 1rem;
+    border-radius: 100%;
+}
+#ytube{
+    border:1px solid white;
+    padding: .5rem;
+    border-radius: 80%;
+}
+#insta{
+    border:1px solid white;
+    padding: 1rem;
+    border-radius: 80%;
 }
